@@ -34,6 +34,9 @@ public class gmail_stepdef extends BaseClass{
 	public void verify_that_email_field_is_displayed() {
 		
 		gmailPage.verifyEmailfeildIsDisplayed();
+		
+		
+		
 	    
 	}
 
@@ -48,7 +51,6 @@ public class gmail_stepdef extends BaseClass{
 	@Then("^Verify the error message (.*) is displayed under email field$")
 	public void verifyErrorMsg(String message) 
 	{
-		System.out.println("Here is the msg : " + message);
 	  gmailPage.verifyErrorMessage(message);
 	}
 	

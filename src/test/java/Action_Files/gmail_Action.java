@@ -15,7 +15,6 @@ public class gmail_Action extends BaseClass {
 	}
 	
 	
-	
 	public static By emailField = By.cssSelector("input[type='email']");
 	public static By nextBtn = By.xpath("//span[text()='Next']");
 	public static By errorMsg = By.xpath("//div[text()='Enter an email or phone number']");
@@ -27,6 +26,7 @@ public class gmail_Action extends BaseClass {
 		Assert.assertTrue(element(emailField).isDisplayed(), "**[ASSERT FAILED]: Email field is not displayed");
 		logMessage("**[ASSERT PASSED]: Email field is displayed");
 	}
+	
 	
 	
 	public void ClickOnNextButton() 
